@@ -6,14 +6,14 @@ $CFG = new stdClass();
 
 $CFG->dbtype    = 'pgsql';
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = getenv('DATABASE_HOST');
-$CFG->dbname    = getenv('DATABASE_NAME');
-$CFG->dbuser    = getenv('DATABASE_USER');
-$CFG->dbpass    = getenv('DATABASE_PASSWORD');
+$CFG->dbhost    = getenv('ec2-54-228-207-163.eu-west-1.compute.amazonaws.com');
+$CFG->dbname    = getenv('d1hs5ons3h7lk9');
+$CFG->dbuser    = getenv('dniboxvpzpyzqs');
+$CFG->dbpass    = getenv('9bfbf8e5a385cf8d920c9ce380f4691ebbdfb9a721f9f3457bf70099b5282d2e');
 $CFG->prefix    = 'mdl_';
 $CFG->dboptions = array (
   'dbpersist' => 0,
-  'dbport' => getenv('DATABASE_PORT'),
+  'dbport' => getenv('5432'),
   'dbsocket' => '',
 );
 
